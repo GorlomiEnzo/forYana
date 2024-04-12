@@ -4,12 +4,11 @@
 
 /* ------------header------------ */
 .headerMenu {
-    float: left;
-    text-align: center;
+    /* text-align: center; */
     font-size: 25px;
     width: 100%;
     margin-bottom: 40px;    
-    margin-top: 40px;    
+    margin-top: 40px;      
 }
 .headerMenuItem {
     color: white;
@@ -63,7 +62,7 @@
     height: 100px; /*высота */
     background: #000000; /*фоновый цвет*/
     color: #ffffff; /*цвет шрифта*/
-    text-align: center; /*выравнивание текста по центру*/
+    
 }
 .bodyCosmeticsImages {
     text-align: center;
@@ -137,6 +136,7 @@
     margin: 10px;
     display: inline-block;
     vertical-align: top;
+    object-fit: cover;/* сохраняет пропорции изображения */
 }
 .imageCosmetic {
     width: 140px; 
