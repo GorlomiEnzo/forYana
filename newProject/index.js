@@ -79,6 +79,7 @@ function displayCosmetic(imageObject) {
     img.src = key; 
     img.alt = imageObject[key]; 
     img.classList.add('imageCosmetic'); 
+    imageContainer.classList.add('containerCosmetics'); 
     
     var caption = document.createElement('p');
     caption.textContent = imageObject[key];

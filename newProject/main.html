@@ -19,9 +19,10 @@
 </header>
 
 <body class="mainBackground">
-    <div>
-        <div class="bodyTextForMainPhoto">COCO CHANNEL</div>
-        <div class="bodyTextForMainPhoto2">The luxury brand of decorative cosmetics represents high-quality products created using innovative technologies and the best ingredients. This brand usually offers a wide range of products including lipsticks, eye shadows, blushes, masks and more.</div>
+    
+    <div class="bodyPositiv">
+        <h1 class="bodyTextForMainPhoto">COCO CHANNEL</h1>
+        <h2 class="bodyTextForMainPhoto2">The luxury brand of decorative cosmetics represents high-quality products created using innovative technologies and the best ingredients. This brand usually offers a wide range of products including lipsticks, eye shadows, blushes, masks and more.</h2>
         <img class="bodyMainPhoto" src="images/mainPhoto.png">
     </div>
    
@@ -33,22 +34,25 @@
     </div>
 
     <div class="bodyObjects">
-        <div>
+        
+        <div class="bodySvg">
             <img src="images/vectors/Vector1.svg">
-            <figure class="bodyTextForImages">unique aroma of cosmetics</figure>
+            <p class="bodyTextForImagesSVG">unique aroma of cosmetics</p>
         </div>
-        <div>
+        
+        <div class="bodySvg">
             <img src="images/vectors/Vector2.svg"> 
-            <figure class="bodyTextForImages">natural comspanosition that makes your faces even healthier</figure>
+            <p class="bodyTextForImagesSVG">natural comspanosition that makes your faces even healthier</p>
         </div>
-        <div>
+        <div class="bodySvg">
             <img src="images/vectors/Vector3.svg"> 
-            <figure class="bodyTextForImages">large selection of luxury cosmetics</figure>
+            <p class="bodyTextForImagesSVG">large selection of luxury cosmetics</p>
         </div>
-        <div>
+        <div class="bodySvg">
             <img src="images/vectors/Vector4.svg"> 
-            <figure class="bodyTextForImages">trending colors of this season in our new collection</figure>
+            <p class="bodyTextForImagesSVG">trending colors of this season in our new collection</p>
         </div>
+
     </div>
     
     <div class="bodyObjects">
@@ -59,7 +63,7 @@
     </div>
 
     <div id="imageCosmeticContainer" class="bodyCosmeticsImages"></div>
-    <div class="bodyObjects">
+    <div class="bodyObjectsButton">
         <button class="previous" id="prev-button">&#8249;</button>
         <button class="next" id="next-button">&#8250;</button>
     </div>
@@ -76,7 +80,7 @@
         </div>
     </div>
 
-    <div class="bodyObjects">
+    <div class="bodyObjectsButtonArt">
         <button class="buttonChoice" id="weddingButton" onclick=addImageWedding()>Wedding</button>
         <button class="buttonChoice" id="eveningButton" onclick=addImageEvening()>Evening</button>
         <button class="buttonChoice" id="artButton" onclick=addImageArt()>Art</button>
@@ -87,7 +91,7 @@
 
     <div class="bodyObjects">
         <div>
-            <p class="bodyTextForImages">Video</p>
+            <p class="bodyTextForImagesVideo">Video</p>
         </div>
     </div>
 
@@ -101,17 +105,17 @@
         </div>
     </div>
 
-    <div>
-        <div class="bodyTextInformation">Contact us</div>
-       
-            <div class="bodyTextInformation2">
-                <figure class="square-block-end">Email:</figure>
-                <figure class="square-block-end">Phone:</figure>
-                <figure class="square-block-end">Message:</figure>
-            </div>
-       
-        
-        <img src="images/endPhoto.png">
+    <div class="contactUs">
+        <div class="bodyTextInformation2">
+            <form class="contactsForm" action=”#”>
+                <h2 class="bodyTextInformation">Contact us</h2>
+                <input type="text" placeholder="Email:">
+                <input type="text" placeholder="Phone:">
+                <input type="email" placeholder="Message:">
+            </form>
+        </div>
+        <div class="contactBg">
+        </div>
     </div>
 
     <footer>
@@ -128,7 +132,7 @@
             <div>Брест, Комсомольская 56</div>
             <div class="footerBlockImage">
                 <div class="footerImage">
-                    <img src="images/instagram.png">
+                    <img src="images/inst.png">
                 </div>
                 <div class="footerImage">
                     <img src="images/facebook.png"> 
