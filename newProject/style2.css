@@ -1,0 +1,253 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainBackground  {
+  background: rgb(0, 0, 0);
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.dropdown {
+  display: none;
+}
+.logo {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+.headerMenu {
+  width: 100%;
+  margin-bottom: 40px;    
+  margin-top: 40px;     
+  text-align: center;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+.headerMenuItem {
+  font-size: 180%;
+  color: white;
+  text-decoration: none;
+  margin-left: 10px; 
+}
+
+.textCenter {
+  width: 100%;
+  margin-top: 5%;
+}
+.textInf1 {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin: 15px auto;
+}
+.chcekBoxClass {
+  margin-top: 20px;
+  Display: flex;
+  Flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.chcekInput{
+  width: 47%;
+  display:flex;
+  justify-content: center;
+}
+/* ============ */
+.textInf {
+  color: white;
+  font-size: 25px;
+  margin-top: 5% ;
+}
+.resultForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.resultFormAmount {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultForm input{
+  background-color: #000000;
+  padding: 20px 5px;
+  width: 30%;
+  margin-top: 20px;
+  color: white;
+}
+.resultFormAmount input{
+  background-color: #000000;
+  padding: 20px 5px;
+  width: 30%;
+  margin-top: 20px;
+  color: white;
+}
+.inpyptText {
+  text-align: center;
+  font-size: 20px;
+}
+
+.bodyObjects {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.bodyLogo {
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+}
+
+.footerText {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.chcekName {
+  margin-left: 5%;
+  color: white;
+  font-size: 20px;
+}
+.footerTextLeft {
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  float: left;
+}
+
+.footerTextRight {
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  float: right;
+}
+
+.footerTextCenter {
+  margin-top: 30px;
+  float: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.linkFooter {
+  color: white;
+  font-size: 20px;
+}
+
+.linkFooter2 {
+  color: white;
+  font-size: 20px;
+}
+
+.footerBlockImage {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.footerImage {
+  width: 70px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .headerMenuItem {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .textCenter {
+    margin-top: 30%;
+    width: 100%;
+  }
+  .headerMenu {
+    display: none;
+  }
+  .dropbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-self: center;
+  }
+  .dropbtn {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: rgb(245, 245, 245);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #000000;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  .footerTextLeft {
+    font-size: 10px;
+  }
+  .linkFooter, .linkFooter2 {
+    font-size: 10px;
+  }
+  .footerTextRight {
+    font-size: 10px;
+  }
+  .imgFooter {
+    width: 10px;
+    height: 10px;
+  }
+  .footerImage {
+    width: 10px;
+    height: 10px;
+    margin: 15px;
+  }
+  .resultForm input{
+    padding: 10px 30px;
+    width: 20%;
+  }
+  .resultFormAmount input{
+    padding: 10px 30px;
+    width: 20%;
+  }
+  .bodyLogo {
+    width: 60px;
+    height: 60px;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+

@@ -7,7 +7,22 @@
     <title>Coco</title>
 </head>
 
-<header>
+<body class="mainBackground">
+
+    <div class="dropdown">
+        <img class="logo" src="images/logo.png" alt="logo"> 
+        <button class="dropbtn" onclick="openMenu()">-</button>
+        <div id="menuItemButton" class="dropdown-content" style="right:0;">
+            <a href="#Company">Company</a>
+            <a href="#Catalog">Catalog</a>
+            <a href="#Contacts">Contacts</a>
+            <a href="#Bestsellers">Bestsellers</a>
+            <a id="calculatorId" href="calculator.html">Calculator</a>
+        </div>
+        <div id="outside" onclick="hide()"></div>
+        <div id="myDiv"></div>
+    </div>
+
     <div class="headerMenu">                   
         <img class="logo" src="images/logo.png"> 
         <a class="headerMenuItem" href="#" id="footer1">Company</a>        
@@ -16,10 +31,7 @@
         <a class="headerMenuItem" href="#" id="footer4">Bestsellers</a>
         <a class="headerMenuItem" href="calculator.html" id="footer5">Calculator</a>   
     </div>
-</header>
 
-<body class="mainBackground">
-    
     <div class="bodyPositiv">
         <h1 class="bodyTextForMainPhoto">COCO CHANNEL</h1>
         <h2 class="bodyTextForMainPhoto2">The luxury brand of decorative cosmetics represents high-quality products created using innovative technologies and the best ingredients. This brand usually offers a wide range of products including lipsticks, eye shadows, blushes, masks and more.</h2>
@@ -33,7 +45,7 @@
         </div>
     </div>
 
-    <div class="bodyObjects">
+    <div class="bodyObjectsSVG">
         
         <div class="bodySvg">
             <img src="images/vectors/Vector1.svg">

@@ -5,6 +5,11 @@
 
 .mainBackground  {
     background: rgb(0, 0, 0);
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.dropdown {
+  display: none;
 }
 
 /* ------------header------------ */
@@ -34,25 +39,31 @@
 
 /* -------------body------------- */
 .bodyPositiv {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
+  position: relative; /* добавляем позиционирование относительно родительского элемента */
 }
+
 .bodyTextForMainPhoto {
-    position:absolute;
-    color: white;
-    font-size: 40px;
-    text-align:center;
-    margin-top: 100px;
-    width: 100%
+  position: absolute;
+  color: white;
+  font-size: 4vw; /* используем относительные единицы, такие как vw */
+  text-align: center;
+  top: 10%; /* задаем отступ от верхнего края */
+  left: 50%; /* выравниваем текст по центру горизонтали */
+  transform: translateX(-50%); /* центрируем текст по горизонтали */
+  width: 90%; /* задаем ширину текста как 90% от родительского элемента */
 }
+
 .bodyTextForMainPhoto2 {
-    left: 0;
-    position:absolute;
-    color: white;
-    font-size: 40px;
-    text-align:center;
-    margin-top: 500px;
-    width: 100%
+  position: absolute;
+  color: white;
+  font-size: 2vw; /* используем относительные единицы, такие как vw */
+  text-align: center;
+  top: 50%; /* задаем отступ от верхнего края */
+  left: 50%; /* выравниваем текст по центру горизонтали */
+  transform: translateX(-50%); /* центрируем текст по горизонтали */
+  width: 90%; /* задаем ширину текста как 90% от родительского элемента */
 }
 .bodyMainPhoto {
     width: 100%;
@@ -74,8 +85,15 @@
 }
 .bodyObjectsButtonArt {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;   
+}
+.buttonChoice {
+    color: rgb(255, 255, 255);
+    background: #000000;
+    width: 20%; 
+    height: 50px;
+    font-size: 10px;
+    margin-left: 2px;
 }
 
 .bodyLogo {
@@ -99,21 +117,40 @@
 }
 .bodyTextForImagesSVG {
     font-size: 20px;
-    width: 200px; /*ширина */
-    height: 100px; /*высота */
+    width: 100%; /*ширина */
+    height: 50px; /*высота */
     background: #000000; /*фоновый цвет*/
     color: #ffffff; /*цвет шрифта*/
+    text-align: center;
 }
+.bodySvg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bodyObjectsSVG {
+    display: flex;
+}
+
+
 .bodyCosmeticsImages {
     text-align: center;
     color: white; 
-    font-size: 15px;
+    font-size: 10px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    width: 70%;
+    width: 80%; /* Ширина контейнера можете увеличить или уменьшить по вашему усмотрению */
     margin: auto;
 }
+
+.imageCosmetic {
+    flex-grow: 1;
+    margin: 4px;
+}
+
+
+
 .previous {
     width: 50px; 
     height: 50px;
@@ -128,14 +165,7 @@
     color: rgb(0, 0, 0);
     border-radius: 50%;
 }
-.buttonChoice {
-    color: rgb(255, 255, 255);
-    background: #000000;
-    width: 200px; 
-    height: 100px;
-    font-size: 20px;
-    margin-left: 20px;
-}
+
 .bodyImagesModels {
     text-align: center;
     color: white; 
@@ -201,19 +231,15 @@
 
 /* ---------styleForJS----------- */
 .image {
-    width: 25%;
-    height: 1000px;
+    width: 30%;
+    height: 400px;
     margin: 10px;
     display: inline-block;
     vertical-align: top;
     object-fit: cover;/* сохраняет пропорции изображения */
 }
 
-.imageCosmetic {
-    width: 240px; 
-    height: 300px; 
-    margin: 10px; 
-}
+
 
 /* ------------------------------ */
 
@@ -241,9 +267,10 @@
     width: 70px; 
     height: 20px;   
 }
+
 /* ------------------------------ */
 
-@media(max-width: 1300px){
+@media(max-width: 768px){
     .headerMenuItem {
         font-size: 14px;
         text-align: center;
@@ -255,7 +282,6 @@
     .bodyTextForImagesSVG {
         margin: 0 auto;
         font-size: 16px;
-        
     }
     .bodyObjects {
         flex-direction: column;
@@ -270,17 +296,22 @@
         margin-bottom: 60px;
         font-size: 20px;
     }
-    .bodyObjectsButtonArt {
-        width: 100%;
-        flex-wrap: wrap;
+
+    .buttonChoice {
+        color: rgb(255, 255, 255);
+        background: #000000;
+        width: 20%; 
+        height: 50px;
+        font-size: 10px;
+        margin-left: 2px;
     }
-    .bodyObjectsButtonArt button {
-        width: 45%;
-    }
+
     .image {
-        width: 100%;
-        margin: 0 auto;
+        
+        width: 40%;
+        margin: 2 auto;
     }
+
     .bodyObjects video {
         margin: 0 auto;
         width: 100%;
@@ -314,5 +345,183 @@
         width: 85%;
         height: 170px;    
         object-fit: contain;
+    }
+
+    @media (max-width: 320px) {
+        .footerTextLeft {
+          font-size: 8px;
+        }
+        .footerTextRight {
+          font-size: 8px;
+        }
+        .footerTextCenter {
+          font-size: 8px;
+        }
+        .linkFooter {
+          color: white;
+          font-size: 10px;
+        }
+        .linkFooter2 {
+          color: white;
+          font-size: 10px;
+        }
+        .footerImage {
+          width: 18px;
+          height: 10px;
+          margin: 5px;
+        }
+        .imgFooter {
+          width: 10px;
+          height: 10px;
+        }
+        .buttonChoice {
+          width: 20%;
+          height: 50px;
+          font-size: 10px;
+          margin-left: 20px;
+        }
+        .displayFourPhoto {
+          display: none;
+        }
+        .displayTwoPhoto {
+          width: 100%;
+          margin: auto;
+          text-align: center;
+          color: white;
+          font-size: 15px;
+          display: block;
+        }
+        .logoCalculator {
+          display: none;
+        }
+        .headerMenu {
+          display: none;
+        }
+    
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          right: 0;
+          background-color: #000000;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+        }
+        .dropdown-content a {
+          color: rgb(245, 245, 245);
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        .dropdown-content a:hover {
+          background-color: #000000;
+        }
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        .dropdown {
+          width: 100%;
+          display: flex;
+          position: relative;
+        }
+        .dropbtn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          align-self: center;
+        }
+        .dropbtn {
+          background-color: #000000;
+          color: rgb(255, 255, 255);
+          padding: 16px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        .image {
+          width: 45%;
+          height: 200px;
+          margin: 10px;
+          display: inline-block;
+          vertical-align: top;
+          -o-object-fit: cover;
+             object-fit: cover; /* сохраняет пропорции изображения */
+        }
+        .logo {
+          width: 80px;
+          height: 80px;
+        }
+        
+        .previous3 {
+          width: 80px;
+          height: 40px;
+          background-color: rgb(0, 0, 0);
+          color: white;
+          border-radius: 10px;
+        }
+        .next3 {
+          width: 80px;
+          height: 40px;
+          background-color: rgb(0, 0, 0);
+          color: white;
+          border-radius: 10px;
+        }
+        .selectProduct {
+          font-size: 30px;
+        }
+        .checkbox-wrap {
+          width: 46%;
+          margin-top: 5%;
+          font-size: 150%;
+        }
+        .enterQuantity {
+          font-size: 30px;
+        }
+        .amount {
+          font-size: 30px;
+        }
+        .inputForm input {
+          width: 170px;
+          height: 32px;
+        }
+        .inputFormBox {
+          width: 170px;
+          height: 32px;
+        }
+        .footerImageCalc {
+          width: 10px;
+          height: 10px;
+          margin: 15px;
+        }
+        .unusual-candles {
+          width: 56%;
+          height: 200px;
+          margin: 10px;
+          display: inline-block;
+          vertical-align: top;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
+        .section {
+          color: rgb(255, 255, 255);
+          background: #000000;
+          width: 100px;
+          height: 50px;
+          font-size: 12px;
+          margin-left: 2px;
+        }
+      }
+
+    .bodySvg img{
+        width: 30%;
+        height: 30%;
+    }
+    .bodyTextForImagesSVG {
+        margin: 0 auto;
+        font-size: 9px;
     }
 }

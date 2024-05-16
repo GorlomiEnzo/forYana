@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src="C:/Yana/forYana/newProject/index.js" type="text/javascript"></script> 
-    <link rel="stylesheet" href="style.css">
-    <title>Coco2</title>
-</head>
+<html >
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Coco</title>
+    </head>
+    
 <body class="mainBackground">
-    <p class="bodyImagesText">calculator</p>
-    <a href="main.html"> MAIN</a>
+    
+    <div class="logo" >
+        <img src="images/logo.png" alt="logo"> 
+    </div>
+    
+    <div class="dropdown">
+        <button class="dropbtn" onclick="openMenu()">-</button>
+        <div id="menuItemButton" class="dropdown-content" style="right:0;">
+            <a href="#Company">Company</a>
+            <a href="#Catalog">Catalog</a>
+            <a href="#Contacts">Contacts</a>
+            <a href="#Bestsellers">Bestsellers</a>
+            <a id="calculatorId" href="main.html">Calculator</a>
+        </div>
+        <div id="outside" onclick="hide()"></div>
+        <div id="myDiv"></div>
+    </div>
+
+    <div class="headerMenu">     
+        <div class="nav-menu">
+            <a class="headerMenuItem" href="#Company" id="footer1">Company</a>        
+            <a class="headerMenuItem" href="#Catalog" id="footer2">Catalog</a>        
+            <a class="headerMenuItem" href="#Contacts" id="footer3">Contacts</a>
+            <a class="headerMenuItem" href="#Bestsellers" id="footer4">Bestsellers</a>
+            <a class="headerMenuItem" href="main.html" id="footer5">Calculator</a>   
+        </div>            
+    </div>
+        
+    <div class="textCenter">
+        <p class="textInf1"> Select product</p>
+    </div>
+    
+    <div class="chcekBoxClass">
+        <div class="chcekInput">
+            <input type="checkbox" id="mascara" name="mascara"/>
+            <label class="chcekName" for="mascara">Mascara</label>
+        </div class="chcekInput">
+        <div class="chcekInput">
+            <input type="checkbox" id="pallete" name="pallete"/>
+            <label class="chcekName" for="pallete">Pallete</label>
+        </div class="chcekInput">
+        <div class="chcekInput">
+            <input type="checkbox" id="lil" name="lil"/>
+            <label class="chcekName" for="lil">Lil stick</label>
+        </div>
+        <div class="chcekInput">
+            <input type="checkbox" id="Povter" name="Povter"/>
+            <label class="chcekName" for="Povter">Povter</label>
+        </div>
+    </div>
+
+    <div class="resultForm">
+        <label class="textInf"> Enter quanity</label>
+        <input class="inpyptText" type="text">  
+    </div>
+    
+    <div class="resultFormAmount">
+        <label class="textInf">Amount</label>
+        <input class="inpyptText" type="text" readonly>  
+    </div>
+
+    <div class="bodyObjects">
+        <div>
+            <img class="bodyLogo" src="images/logo.png" alt="logo">
+        </div>
+    </div>
+
+    <div class="footerText">
+
+        <div class="footerTextLeft">
+            <p>
+                CocoChannel@gmail.com
+            </p>
+            <p>
+                678-90-90
+            </p>
+        </div>
+
+        <div class="footerTextCenter">
+            <a class="linkFooter" href='https://www.figma.com/file/gllvvopo07ZcUV0oz9NZq4/Untitled?type=design&node-id=70-69&mode=design&t=P83sF8HJqYewt4AK-0'>FIGMA</a>
+            <a class="linkFooter2" href="https://github.com/RadievskayaYana/BSTU-cosmetic/branches">github.com</a>
+        </div>
+        
+        <div class="footerTextRight">
+            <div>Брест, Комсомольская 56</div>
+            <div class="footerBlockImage">
+                <div class="footerImage">
+                    <img class="imgFooter" src="images/inst.png" alt="endPng">
+                </div>
+                <div class="footerImage">
+                    <img class="imgFooter" src="images/facebook.png" alt="endPng"> 
+                </div>
+                <div class="footerImage">
+                    <img class="imgFooter" src="images/twitter.png" alt="endPng"> 
+                </div>
+                <div class="footerImage">
+                    <img class="imgFooter" src="images/pinterest.png" alt="endPng"> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="calculator.js"></script>
 </body>
 </html>
+
+

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Whiff of wellness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Gloria+Hallelujah&family=Roboto&family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="mainBackground">
+    <div class="dropdown">
+        <img class="logo" src="images/logo.png" alt="logo"> 
+        <button class="dropbtn" onclick="openMenu()">-</button>
+        <div id="menuItemButton" class="dropdown-content" style="right:0;">
+            <a href="#Company">Company</a>
+            <a href="#Catalog">Catalog</a>
+            <a href="#Contacts">Contacts</a>
+            <a href="#Bestsellers">Bestsellers</a>
+            <a id="calculatorId" href="calculator.html">Calculator</a>
+        </div>
+        <div id="outside" onclick="hide()"></div>
+        <div id="myDiv"></div>
+    </div>
+
+    <div class="headerMenu">     
+        <img class="logo" src="images/logo.png" alt="logo"> 
+        <div class="nav-menu">
+            <a class="headerMenuItem" href="#Company" id="footer1">Company</a>        
+            <a class="headerMenuItem" href="#Catalog" id="footer2">Catalog</a>        
+            <a class="headerMenuItem" href="#Contacts" id="footer3">Contacts</a>
+            <a class="headerMenuItem" href="#Bestsellers" id="footer4">Bestsellers</a>
+            <a class="headerMenuItem" href="calculator.html" id="footer5">Calculator</a>   
+        </div>            
+    </div>
+
+    <div class="bodyPositiv">
+        <h1 class="bodyTextForMainPhoto">COCO CHANNEL</h1>
+        <h2 class="bodyTextForMainPhoto2">The luxury brand of decorative cosmetics represents high-quality products created using innovative technologies and the best ingredients. This brand usually offers a wide range of products including lipsticks, eye shadows, blushes, masks and more.</h2>
+        <img class="bodyMainPhoto" src="images/mainPhoto.png" alt="mainPhoto">
+    </div>
+
+    <div class="bodyObjects">
+        <div>
+            <img class="bodyLogo" src="images/logo.png" alt="logo">
+            <p class="bodyTextForImages">About us</p>
+        </div>
+    </div>
+
+    <a id="Catalog"></a>
+        
+    <div class="bodyObjectsSvg">
+        <div class="bodySvg">
+            <img src="images/vectors/Vector1.svg" alt="svg">
+            <p class="bodyTextForImagesSVG">unique aroma of cosmetics</p>
+        </div>
+        
+        <div class="bodySvg">
+            <img src="images/vectors/Vector2.svg" alt="svg"> 
+            <p class="bodyTextForImagesSVG">natural comspanosition that makes your faces even healthier</p>
+        </div>
+        <div class="bodySvg">
+            <img src="images/vectors/Vector3.svg" alt="svg"> 
+            <p class="bodyTextForImagesSVG">large selection of luxury cosmetics</p>
+        </div>
+        <div class="bodySvg">
+            <img src="images/vectors/Vector4.svg" alt="svg"> 
+            <p class="bodyTextForImagesSVG">trending colors of this season in our new collection</p>
+        </div>
+    </div>
+
+    <a id="Bestsellers"></a>
+
+    <div class="bodyObjects">
+        <div>
+            <img class="bodyLogo" src="images/logo.png" alt="logo">
+            <p class="bodyTextForImages">Bestsellers</p>
+        </div>
+    </div>
+
+    
+    <div id="imageCosmeticContainer" class="bodyCosmeticsImages">
+        <div class="aboba">
+            <img class="aboba1" src="images/cosmetics1.png" alt="head-candles">
+            <img class="aboba1" src="images/cosmetics2.png" alt="inline-candles">
+            <img class="aboba1" src="images/cosmetics3.png" alt="round-candles">
+            <img class="aboba1" src="images/cosmetics4.png" alt="round-candles">           
+        </div>
+        <div class="aboba">
+            <img class="aboba1" src="images/temp.png" alt="head-candles">
+            <img class="aboba1" src="images/temp1.png" alt="inline-candles">
+            <img class="aboba1" src="images/temp2.png" alt="round-candles">
+            <img class="aboba1" src="images/temp3.png" alt="round-candles">
+        </div>
+    </div>
+
+
+    <div class="bodyObjectsButton">
+        <button class="previous" id="prev-button">&#8592;</button>
+        <button class="next" id="next-button">&#8594;</button>
+    </div>
+
+    <div class="block container photo">
+
+        <h3 class="video-tittle products-title" id="Products">PRODUCTS</h3>
+        <div class="sections">
+            <button class="section button_color" data-season="wedding">Wedding</button>
+            <button class="section" data-season="evning">Evening</button>
+            <button class="section" data-season="art">Art</button>
+            <button class="section" data-season="natural">Natural</button>
+        </div>
+
+        
+          
+    </div>
+
+    <div class="photo__slider">
+        
+        <div class="unusual-images-lg">
+            
+            <div class="slider">
+                
+                <div class="photo__image slider_left">
+                    <img class="unusual-candles" src="images/models/model.png" alt="head-candles">
+                    <img class="unusual-candles mobile" src="images/models/model1.png" alt="inline-candles">
+                    <img class="unusual-candles mobile" src="images/models/model2.png" alt="round-candles">
+                    
+                    <img class="unusual-candles mobile" src="images/models/model3.png" alt="different-candles">
+                    <img class="unusual-candles laptop" src="images/models/model4.png" alt="line-candles">
+                    <img class="unusual-candles laptop" src="images/models/model5.png" alt="white-candles">
+                </div>   
+                
+                <div class="photo__image slider_center">
+                    <img class="unusual-candles" src="images/models/model2.png" alt="head-candles">
+                    <img class="unusual-candles mobile" src="images/models/model10.png" alt="inline-candles">
+                    <img class="unusual-candles mobile" src="images/models/model11.png" alt="round-candles" >
+                    
+                    <img class="unusual-candles mobile" src="images/models/model6.png" alt="different-candles">
+                    <img class="unusual-candles laptop" src="images/models/model7.png" alt="line-candles" >
+                    <img class="unusual-candles laptop" src="images/models/model8.png" alt="white-candles">
+                </div>
+
+                <div class="photo__image slider_right">
+                    <img class="unusual-candles" src="images/models/model12.png" alt="head-candles">
+                    <img class="unusual-candles mobile" src="images/models/model13.png" alt="inline-candles">
+                    <img class="unusual-candles mobile" src="images/models/model14.png" alt="round-candles">
+                    
+                    <img class="unusual-candles mobile" src="images/models/model15.png" alt="different-candles">
+                    <img class="unusual-candles laptop" src="images/models/model16.png" alt="line-candles">
+                    <img class="unusual-candles laptop" src="images/models/model17.png" alt="white-candles">
+                </div>
+
+            </div>
+            <div class="arrows">
+                <a >
+                    <img class="button_slider_left" src="images/button-left.png" alt="left-arrow">
+                </a>
+                <a>
+                    <img class="button_slider_right" src="images/button-right.png" alt="right-arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bodyObjects">
+        <div>
+            <p class="bodyTextForImagesVideo">Video</p>
+        </div>
+    </div>
+
+    <div class="bodyObjects">
+        <video src="images/video.mp4" autoplay controls></video>      
+    </div>
+
+    <div class="bodyObjects">
+        <div>
+            <img class="bodyLogo" src="images/logo.png" alt="logo">
+        </div>
+    </div>
+
+    <a id="Contacts"></a>
+
+    <div class="contactUs">
+        <div class="bodyTextInformation2">
+            <form class="contactsForm" action=”#”>
+                <h2 class="bodyTextInformation">Contact us</h2>
+                <input type="text" placeholder="Email:">
+                <input type="text" placeholder="Phone:">
+                <input type="email" placeholder="Message:">
+            </form>
+        </div>
+        <div class="contactBg">
+        </div>
+    </div>
+
+    <div class="footerText">
+
+        <div class="footerTextLeft">
+            <p>
+                CocoChannel@gmail.com
+            </p>
+            <p>
+                678-90-90
+            </p>
+        </div>
+
+        <div class="footerTextCenter">
+            <a class="linkFooter" href='https://www.figma.com/file/gllvvopo07ZcUV0oz9NZq4/Untitled?type=design+&+node-id=70-69&mode=design&t=P83sF8HJqYewt4AK-0'>FIGMA</a>
+            <a class="linkFooter2" href="https://github.com/RadievskayaYana/BSTU-cosmetic/branches">github.com</a>
+        </div>
+        
+        <div class="footerTextRight">
+            <div>Брест, Комсомольская 56</div>
+            <div class="footerBlockImage">
+                <div class="footerImage">
+                    <img class="imgFooter" src="images/inst.png" alt="endPng">
+                </div>
+                <div class="footerImage">
+                    <img class="imgFooter" src="images/facebook.png" alt="endPng"> 
+                </div>
+                <div class="footerImage">
+                    <img class="imgFooter" src="images/twitter.png" alt="endPng"> 
+                </div>
+                <div class="footerImage">
+                    <img class="imgFooter" src="images/pinterest.png" alt="endPng"> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--  -->
+    <script src="index.js"></script>
+</body>
+</html>
